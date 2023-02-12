@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+   <include file="$(find assignment_2_2022)/launch/assignment1.launch"/>
+   <!-- <node pkg ="robot_r" type="client_node" name="cilent" output="screen" /> -->
+   <node pkg ="robot_r" type="client_sub_node" name="client_sub" output="screen" />
+   <node pkg ="robot_r" type="info_counter_node" name="info_counter" output="screen" />
+   <node pkg ="robot_r" type="info_sub_node" name="info_sub" output="screen" />
+</launch>
+

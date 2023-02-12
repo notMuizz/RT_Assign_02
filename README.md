@@ -20,7 +20,7 @@ This package have following files structure. Name of package is 'robot_r' and an
 
 - **src:** Folder to place the all the nodes of the project. There are total of **Four nodes** in the src files.
   - *sub-files:* Nodes of the project.
-- **launch:** Folder with the launch files for the robots **assign_02.
+- **launch:** Folder with the launch files for the robots **assign_02**.
 - **srv:** Folder with the service files for the robots.   
 - **msg:** Folder with the message files for the robot.
 

@@ -11,9 +11,9 @@ In this assignment, a ROS package was developed to control a **Robot's** movemen
 - A launch file to start the simulation and set the frequency for the subscriber node.<br/>
 
 
+![Screenshot from 2023-02-11 00-26-59](https://user-images.githubusercontent.com/123844091/218287220-838028bb-0fd9-4cdc-80c0-b2016882b2bf.png)
 
 
-![Screenshot from 2023-01-11 04-45-58](https://user-images.githubusercontent.com/48551115/211718216-c5359878-052d-4491-8543-d0c1db8dd183.png)
 
 ## Organization of Robot_package
 This package have following files structure. Name of package is 'robot_r' and and inside the package, following is the structure of files.
@@ -25,13 +25,15 @@ This package have following files structure. Name of package is 'robot_r' and an
 - **msg:** Folder with the message files for the robot.
 
 The following graph demonstrate the connection between nodes:
+![Screenshot from 2023-02-11 22-16-29](https://user-images.githubusercontent.com/123844091/218287163-4325aefb-dded-41e3-b9c8-c0e5145bcd3d.png)
+
 
 
 ## Pacakge Directory
 For running this file first install the ROS workspace and other required files. To install this package, just clone it inside your ROS workspace, running:
 
 ```
-git clone https://github.com/masoodad/ws_researchTrack.git
+git clone https://github.com/notMuizz/RT_Assign_02.git
 ```
 ### Running
 
@@ -45,13 +47,9 @@ roslaunch robot_r  assign_02.launch
 rosrun robot_r client_node
 ```
 Once node is started, follow the instruction on the terminal. Please find the screenshot for more details. 
+![Screenshot from 2023-02-11 22-12-11](https://user-images.githubusercontent.com/123844091/218287266-8d4df396-17d9-4eb1-bdb9-6ab2f1ddceae.png)
 
-![Screenshot from 2023-01-11 03-08-03](https://user-images.githubusercontent.com/48551115/211718427-559d5ab7-240f-49f9-9977-3a9eb7bf3587.png)
-
-
-![Screenshot from 2023-01-11 05-53-26](https://user-images.githubusercontent.com/48551115/211720964-47cd5881-b9a6-4d51-a27e-9f64d80a6176.png)
-![Screenshot from 2023-01-11 05-53-43](https://user-images.githubusercontent.com/48551115/211720972-12f26d68-37e5-4a55-a45d-2e72735148fc.png)
-![Screenshot from 2023-01-11 05-54-52](https://user-images.githubusercontent.com/48551115/211720980-436af9ef-2e76-4620-9125-69b905f72d4d.png)
+![Screenshot from 2023-02-11 22-14-10](https://user-images.githubusercontent.com/123844091/218287292-844bfe16-c6b7-4942-9f03-ae32dde444d9.png)
 
 
 ## Pseudocode 

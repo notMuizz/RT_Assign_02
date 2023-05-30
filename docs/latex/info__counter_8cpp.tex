@@ -1,0 +1,105 @@
+\hypertarget{info__counter_8cpp}{}\doxysection{src/info\+\_\+counter.cpp File Reference}
+\label{info__counter_8cpp}\index{src/info\_counter.cpp@{src/info\_counter.cpp}}
+{\ttfamily \#include \char`\"{}ros/ros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}robot\+\_\+r/\+Counter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}assignment\+\_\+2\+\_\+2022/\+Planning\+Action\+Result.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for info\+\_\+counter.\+cpp\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{info__counter_8cpp_a258f1804016e36c51707502cb6e7f214}{callback}} (const assignment\+\_\+2\+\_\+2022\+::\+Planning\+Action\+Result\+::\+Const\+Ptr \&msg)
+\begin{DoxyCompactList}\small\item\em Callback function for the /reaching\+\_\+goal/result topic. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{info__counter_8cpp_af7bf2ee215e420b854b54c0937362a01}{call\+\_\+count}} (robot\+\_\+r\+::\+Counter\+::\+Request \&req, robot\+\_\+r\+::\+Counter\+::\+Response \&res)
+\begin{DoxyCompactList}\small\item\em Service callback function to set values of the /info\+\_\+counter topic. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{info__counter_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Main function for the info\+\_\+counter node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{info__counter_8cpp_a6e4ce36e622eb01432e2c50dc59d0c27}\label{info__counter_8cpp_a6e4ce36e622eb01432e2c50dc59d0c27}} 
+int {\bfseries counter\+\_\+reach} = 0
+\item 
+\mbox{\Hypertarget{info__counter_8cpp_af20186488c086573476471d4b4399e8e}\label{info__counter_8cpp_af20186488c086573476471d4b4399e8e}} 
+int {\bfseries counter\+\_\+cancel} = 0
+\item 
+\mbox{\Hypertarget{info__counter_8cpp_a7d6f8a25e94209bd3ba29b2051ca4f08}\label{info__counter_8cpp_a7d6f8a25e94209bd3ba29b2051ca4f08}} 
+int {\bfseries stat}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Hafiz Muizz Ahmed Sethi 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+30/05/2023
+\end{DoxyDate}
+Subscribes To\+: ~\newline
+ /reaching\+\_\+goal/result
+
+Services To\+: ~\newline
+ /info\+\_\+counter
+
+Description\+: This code is a R\+OS node that keeps track of the number of reached and canceled goals. It subscribes to the \char`\"{}/reaching\+\_\+goal/result\char`\"{} topic to receive status messages and updates the counters accordingly. It also provides a service \char`\"{}/info\+\_\+counter\char`\"{} to retrieve the current counts of reached and canceled goals. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{info__counter_8cpp_af7bf2ee215e420b854b54c0937362a01}\label{info__counter_8cpp_af7bf2ee215e420b854b54c0937362a01}} 
+\index{info\_counter.cpp@{info\_counter.cpp}!call\_count@{call\_count}}
+\index{call\_count@{call\_count}!info\_counter.cpp@{info\_counter.cpp}}
+\doxysubsubsection{\texorpdfstring{call\_count()}{call\_count()}}
+{\footnotesize\ttfamily bool call\+\_\+count (\begin{DoxyParamCaption}\item[{robot\+\_\+r\+::\+Counter\+::\+Request \&}]{req,  }\item[{robot\+\_\+r\+::\+Counter\+::\+Response \&}]{res }\end{DoxyParamCaption})}
+
+
+
+Service callback function to set values of the /info\+\_\+counter topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em req} & Request object for the Counter service. \\
+\hline
+{\em res} & Response object for the Counter service. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the service call was successful, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{info__counter_8cpp_a258f1804016e36c51707502cb6e7f214}\label{info__counter_8cpp_a258f1804016e36c51707502cb6e7f214}} 
+\index{info\_counter.cpp@{info\_counter.cpp}!callback@{callback}}
+\index{callback@{callback}!info\_counter.cpp@{info\_counter.cpp}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily void callback (\begin{DoxyParamCaption}\item[{const assignment\+\_\+2\+\_\+2022\+::\+Planning\+Action\+Result\+::\+Const\+Ptr \&}]{msg }\end{DoxyParamCaption})}
+
+
+
+Callback function for the /reaching\+\_\+goal/result topic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Pointer to the received Planning\+Action\+Result message. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{info__counter_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{info__counter_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{info\_counter.cpp@{info\_counter.cpp}!main@{main}}
+\index{main@{main}!info\_counter.cpp@{info\_counter.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Main function for the info\+\_\+counter node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of command-\/line arguments. \\
+\hline
+{\em argv} & Array of command-\/line arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Integer representing the exit status. 
+\end{DoxyReturn}
